@@ -19,9 +19,13 @@ class Auth: ObservableObject {
         case refreshToken
     }
     
+    // create a shared Auth object (uses Singleton design pattern)
     static let shared: Auth = Auth()
+    
     private let keychain: Keychain = Keychain(service: "SwiftUIReminder-Token")
     
+    // @Published property wrapper ensures that changes to the "loggedIn" property are automatically published to any views observing it
+    // see RootScreen.swift for more on @Published, @EnvironmentObject and observed values relative to Views and heirarchy
     @Published var loggedIn: Bool = false
     
     private init() {

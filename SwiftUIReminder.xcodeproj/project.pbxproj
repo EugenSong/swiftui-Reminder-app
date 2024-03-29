@@ -23,6 +23,9 @@
 		7DC46F292BB618A500468CEC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC46F282BB618A500468CEC /* HomeViewModel.swift */; };
 		7DC46F2D2BB6191E00468CEC /* RootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC46F2C2BB6191E00468CEC /* RootScreen.swift */; };
 		7DC46F302BB61F2F00468CEC /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC46F2F2BB61F2F00468CEC /* MainButton.swift */; };
+		7DC46F322BB6280F00468CEC /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC46F312BB6280F00468CEC /* APIRequest.swift */; };
+		7DC46F352BB62D2900468CEC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC46F342BB62D2900468CEC /* Config.swift */; };
+		7DC46F372BB64C1D00468CEC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC46F362BB64C1D00468CEC /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		7DC46F282BB618A500468CEC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7DC46F2C2BB6191E00468CEC /* RootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScreen.swift; sourceTree = "<group>"; };
 		7DC46F2F2BB61F2F00468CEC /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		7DC46F312BB6280F00468CEC /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		7DC46F342BB62D2900468CEC /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		7DC46F362BB64C1D00468CEC /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		95B20C75186FB64117F26E88 /* Pods-SwiftUIReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIReminder.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIReminder/Pods-SwiftUIReminder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +94,7 @@
 		7DC46EEB2BB4D1B900468CEC /* SwiftUIReminder */ = {
 			isa = PBXGroup;
 			children = (
+				7DC46F332BB62D2000468CEC /* Utilities */,
 				7DC46EFF2BB4DAB100468CEC /* Features */,
 				7DC46EFB2BB4D8CD00468CEC /* SupportingFiles */,
 				7DC46EEC2BB4D1B900468CEC /* SwiftUIReminderApp.swift */,
@@ -95,6 +102,7 @@
 				7DC46EF02BB4D1BA00468CEC /* Assets.xcassets */,
 				7DC46EF22BB4D1BA00468CEC /* Preview Content */,
 				7DC46F242BB5FD7700468CEC /* Auth.swift */,
+				7DC46F312BB6280F00468CEC /* APIRequest.swift */,
 			);
 			path = SwiftUIReminder;
 			sourceTree = "<group>";
@@ -355,6 +363,15 @@
 			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
+		7DC46F332BB62D2000468CEC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7DC46F342BB62D2900468CEC /* Config.swift */,
+				7DC46F362BB64C1D00468CEC /* APIError.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		D52F599970F19674272743EA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -499,10 +516,13 @@
 			files = (
 				7DC46F1D2BB4F54A00468CEC /* LoginViewModel.swift in Sources */,
 				7DC46EEF2BB4D1B900468CEC /* ContentView.swift in Sources */,
+				7DC46F322BB6280F00468CEC /* APIRequest.swift in Sources */,
+				7DC46F352BB62D2900468CEC /* Config.swift in Sources */,
 				7DC46F2D2BB6191E00468CEC /* RootScreen.swift in Sources */,
 				7DC46F212BB4FEBB00468CEC /* LoginResponse.swift in Sources */,
 				7DC46F292BB618A500468CEC /* HomeViewModel.swift in Sources */,
 				7DC46EED2BB4D1B900468CEC /* SwiftUIReminderApp.swift in Sources */,
+				7DC46F372BB64C1D00468CEC /* APIError.swift in Sources */,
 				7DC46F1F2BB4F8A600468CEC /* LoginRequest.swift in Sources */,
 				7DC46F272BB6185C00468CEC /* HomeScreen.swift in Sources */,
 				7DC46F302BB61F2F00468CEC /* MainButton.swift in Sources */,
